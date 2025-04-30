@@ -4,7 +4,7 @@ import { ThemeProvider } from '@/provider/theme-provider';
 import './globals.css';
 
 export const metadata: Metadata = {
-    title: 'Rafael Mafort Coimbra',
+    title: 'Rafael Mafort',
     description: 'powered by Rafael Mafort Coimbra',
 };
 
@@ -15,6 +15,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
+            <head>
+                <link
+                    rel="icon"
+                    href="/profile-photo.svg"
+                    type="image/x-icon"
+                />
+            </head>
             <body>
                 <ThemeProvider
                     attribute="class"

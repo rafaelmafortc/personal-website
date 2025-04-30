@@ -2,7 +2,7 @@ import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function Home() {
     return (
-        <main className="min-h-screen p-6 max-w-2xl mx-auto mt-8 mb-12">
+        <main className="min-h-full p-6 max-w-2xl mx-auto mt-8 mb-12">
             <div className="fixed top-4 right-4">
                 <ThemeToggle />
             </div>

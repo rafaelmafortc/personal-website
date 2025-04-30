@@ -18,7 +18,9 @@ export default function Home() {
                     style={{ height: 'auto' }}
                 />
                 <div className="flex flex-col gap-1">
-                    <h1 className="text-3xl font-bold">Rafael Mafort</h1>
+                    <h1 className="text-3xl font-bold">
+                        Rafael Mafort Coimbra
+                    </h1>
                     <h2 className="text-lg text-muted-foreground font-medium">
                         Fullstack Developer
                     </h2>

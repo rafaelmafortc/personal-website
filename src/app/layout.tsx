@@ -4,7 +4,7 @@ import { ThemeProvider } from '@/provider/theme-provider';
 import './globals.css';
 
 export const metadata: Metadata = {
-    title: 'Personal Website',
+    title: 'Rafael Mafort Coimbra',
     description: 'powered by Rafael Mafort Coimbra',
 };
 

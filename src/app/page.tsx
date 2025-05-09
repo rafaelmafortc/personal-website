@@ -1,9 +1,12 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { ThemeToggle } from '@/components/theme-toggle';
 import { LanguageSwitcher } from '@/components/language-switcher';
 
 export default function Home() {
+    const t = useTranslations('home');
+
     return (
         <main className="min-h-full p-6 max-w-2xl mx-auto mt-8 mb-12">
             <div className="fixed flex gap-2 top-4 right-4">
@@ -25,16 +28,14 @@ export default function Home() {
                             Rafael Mafort Coimbra
                         </h1>
                         <h2 className="text-lg text-muted-foreground font-semibold">
-                            Software Engineer
+                            {t('subtitle')}
                         </h2>
                     </div>
                 </section>
                 <section className="flex flex-col gap-1">
-                    <h3 className="text-2xl font-semibold">About</h3>
+                    <h3 className="text-2xl font-semibold">{t('about')}</h3>
                     <p className="text-base text-muted-foreground font-medium">
-                        Software developer with solid experience in frontend and
-                        backend technologies, specializing in high-impact
-                        projects within investment banks and startups.
+                        {t('about_text')}
                     </p>
                 </section>
             </div>

@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 
 import { ThemeToggle } from '@/components/theme-toggle';
 import { LanguageSwitcher } from '@/components/language-switcher';
-import { CarouselOrientation } from '@/components/technologie-card';
+import { TechCarousel } from '@/components/tech-carousel';
 
 export default function Home() {
     const t = useTranslations('home');
@@ -44,7 +44,7 @@ export default function Home() {
                         {t('technologies')}
                     </h3>
                     <div className="w-full flex justify-center">
-                        <CarouselOrientation />
+                        <TechCarousel />
                     </div>
                 </section>
                 <section>

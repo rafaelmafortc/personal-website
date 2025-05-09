@@ -20,11 +20,12 @@ const technologies = {
     awsservices: 'AWS Services',
 };
 
-export function CarouselOrientation() {
+export function TechCarousel() {
     return (
         <Carousel
             opts={{
                 align: 'start',
+                loop: true,
             }}
             orientation="horizontal"
             className="w-4/5 h-[110px]"

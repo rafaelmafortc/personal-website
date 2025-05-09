@@ -38,6 +38,16 @@ export default function Home() {
                         {t('about_text')}
                     </p>
                 </section>
+                <section>
+                    <h3 className="text-2xl font-semibold">
+                        {t('technologies')}
+                    </h3>
+                </section>
+                <section>
+                    <h3 className="text-2xl font-semibold">
+                        {t('experience')}
+                    </h3>
+                </section>
             </div>
         </main>
     );

@@ -40,9 +40,7 @@ export default function Home() {
                     </p>
                 </section>
                 <section className="flex flex-col gap-1">
-                    <h3 className="text-2xl font-semibold">
-                        {t('technologies')}
-                    </h3>
+                    <h3 className="text-2xl font-semibold">{t('skills')}</h3>
                     <div className="w-full flex justify-center">
                         <TechCarousel />
                     </div>

@@ -8,6 +8,8 @@
     },
     "experiences": {
         "btgpactual_date": "Nov/2022 - Presente",
-        "vlepo_date": "Jan/2022 - Nov/2022"
+        "btgpactual_description": "Atualmente, trabalho como engenheiro de software na equipe de tecnologia do Family Office do BTG Pactual, o maior banco de investimento da América Latina. Contribuo para o desenvolvimento de soluções escaláveis e eficientes que automatizam e otimizam processos-chave, como consolidação de ativos e contas, cálculos de performance de investimentos e geração de relatórios personalizados para clientes.",
+        "vlepo_date": "Jan/2022 - Nov/2022",
+        "vlepo_description": "Trabalhei como desenvolvedor front-end na Vlepo, uma plataforma web de precificação de produtos voltada para indústrias e empresas do varejo. A plataforma tinha como objetivo simplificar e automatizar o processo de precificação, ajudando as empresas a tomar decisões baseadas em dados e a melhorar a lucratividade."
     }
 }

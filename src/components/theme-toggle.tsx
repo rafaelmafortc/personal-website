@@ -13,7 +13,7 @@ export function ThemeToggle() {
     };
 
     return (
-        <Button onClick={handleTheme} size="icon" variant="outline">
+        <Button onClick={handleTheme} size="icon" variant="ghost">
             <div className="relative flex items-center justify-center">
                 <Sun className="absolute w-5 h-5 scale-100 dark:scale-0" />
                 <Moon className="absolute w-5 h-5 scale-0 dark:scale-100" />

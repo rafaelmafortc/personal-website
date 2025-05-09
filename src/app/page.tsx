@@ -10,8 +10,8 @@ export default function Home() {
     const t = useTranslations('home');
 
     return (
-        <main className="min-h-full p-6 max-w-2xl mx-auto mt-12 mb-12">
-            <div className="fixed flex gap-2 top-4 right-4">
+        <main className="min-h-full p-6 max-w-2xl mx-auto my-2">
+            <div className="fixed flex gap-2 bottom-4 right-4">
                 <LanguageSwitcher />
                 <ThemeToggle />
             </div>

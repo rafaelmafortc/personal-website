@@ -1,11 +1,13 @@
 import Image from 'next/image';
 
 import { ThemeToggle } from '@/components/theme-toggle';
+import { LanguageSwitcher } from '@/components/language-switcher';
 
 export default function Home() {
     return (
         <main className="min-h-full p-6 max-w-2xl mx-auto mt-8 mb-12">
-            <div className="fixed top-4 right-4">
+            <div className="fixed flex gap-2 top-4 right-4">
+                <LanguageSwitcher />
                 <ThemeToggle />
             </div>
             <div className="flex flex-col gap-8">

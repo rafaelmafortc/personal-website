@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { LanguageSwitcher } from '@/components/language-switcher';
 import { TechCarousel } from '@/components/tech-carousel';
+import { ExperiencesCards } from '@/components/experiences-cards';
 
 export default function Home() {
     const t = useTranslations('home');
@@ -45,10 +46,13 @@ export default function Home() {
                         <TechCarousel />
                     </div>
                 </section>
-                <section>
+                <section className="flex flex-col gap-4">
                     <h3 className="text-2xl font-semibold">
                         {t('experience')}
                     </h3>
+                    <div>
+                        <ExperiencesCards />
+                    </div>
                 </section>
             </div>
         </main>

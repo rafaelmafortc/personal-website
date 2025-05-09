@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Image from 'next/image';
 
 import { Card, CardContent } from '@/components/ui/card';
@@ -47,9 +46,9 @@ export function TechCarousel() {
                                                 userSelect: 'none',
                                             }}
                                         />
-                                        <span className="text-xl font-semibold">
+                                        <p className="text-xl font-semibold">
                                             {name}
-                                        </span>
+                                        </p>
                                     </div>
                                 </CardContent>
                             </Card>

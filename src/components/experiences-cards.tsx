@@ -35,12 +35,14 @@ export function ExperiencesCards() {
                             <p className="font-medium leading-none">
                                 {value.title}
                             </p>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-sm text-sidebar-ring">
                                 {t(`${key}_date`)}
                             </p>
                         </div>
                     </div>
-                    <p className="text-base">{t(`${key}_description`)}</p>
+                    <p className="font-medium text-muted-foreground">
+                        {t(`${key}_description`)}
+                    </p>
                     <div className="flex gap-2">
                         {value.technologies.map((tech) => (
                             <Badge key={tech} variant="secondary">

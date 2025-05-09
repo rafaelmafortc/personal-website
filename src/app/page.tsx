@@ -3,8 +3,9 @@ import { useTranslations } from 'next-intl';
 
 import { ThemeToggle } from '@/components/theme-toggle';
 import { LanguageSwitcher } from '@/components/language-switcher';
-import { TechCarousel } from '@/components/tech-carousel';
+import { SkillsCarousel } from '@/components/skills-carousel';
 import { ExperiencesCards } from '@/components/experiences-cards';
+import { ProjectsCards } from '@/components/projects-cards';
 
 export default function Home() {
     const t = useTranslations('home');
@@ -43,7 +44,7 @@ export default function Home() {
                 <section className="flex flex-col gap-1">
                     <h3 className="text-2xl font-semibold">{t('skills')}</h3>
                     <div className="w-full flex justify-center">
-                        <TechCarousel />
+                        <SkillsCarousel />
                     </div>
                 </section>
                 <section className="flex flex-col gap-4">
@@ -56,6 +57,9 @@ export default function Home() {
                 </section>
                 <section className="flex flex-col gap-4">
                     <h3 className="text-2xl font-semibold">{t('projects')}</h3>
+                    <div>
+                        <ProjectsCards />
+                    </div>
                 </section>
             </div>
         </main>

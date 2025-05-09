@@ -19,7 +19,7 @@ const technologies = {
     awsservices: 'AWS Services',
 };
 
-export function TechCarousel() {
+export function SkillsCarousel() {
     return (
         <Carousel
             opts={{

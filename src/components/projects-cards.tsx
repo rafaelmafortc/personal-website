@@ -22,7 +22,7 @@ const projects = {
 
 export function ProjectsCards() {
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col sm:flex-row gap-2">
             {Object.entries(projects).map(([key, value]) => (
                 <div key={key} className="p-1">
                     <a
@@ -40,7 +40,7 @@ export function ProjectsCards() {
                                 <Image
                                     src={`/projects/${key}.svg`}
                                     alt={value.title}
-                                    width={160}
+                                    width={200}
                                     height={60}
                                     style={{
                                         height: 'auto',

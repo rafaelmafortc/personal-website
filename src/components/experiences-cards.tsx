@@ -12,7 +12,7 @@ export function ExperiencesCards() {
     return (
         <div className="flex flex-col gap-6">
             {Object.entries(experiences).map(([key, name]) => (
-                <div key={key} className="flex flex-col gap-1">
+                <div key={key} className="flex flex-col gap-2">
                     <div className="flex items-center gap-4">
                         <Image
                             src={`/experiences/${key}.svg`}

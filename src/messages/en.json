@@ -4,7 +4,8 @@
         "about": "About",
         "about_text": "Software developer with solid experience in frontend and backend technologies, specializing in high-impact projects within investment banks and startups.",
         "skills": "Skills",
-        "experience": "Experience"
+        "experience": "Experience",
+        "projects": "Projects"
     },
     "experiences": {
         "btgpactual_date": "Nov/2022 - Present",

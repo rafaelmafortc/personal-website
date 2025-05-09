@@ -54,6 +54,9 @@ export default function Home() {
                         <ExperiencesCards />
                     </div>
                 </section>
+                <section className="flex flex-col gap-4">
+                    <h3 className="text-2xl font-semibold">{t('projects')}</h3>
+                </section>
             </div>
         </main>
     );

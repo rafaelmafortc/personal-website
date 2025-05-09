@@ -40,7 +40,7 @@ export function ProjectsCards() {
                                 <Image
                                     src={`/projects/${key}.svg`}
                                     alt={value.title}
-                                    width={200}
+                                    width={160}
                                     height={60}
                                     style={{
                                         height: 'auto',

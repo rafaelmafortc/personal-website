@@ -23,7 +23,7 @@ export default function Home() {
                             Rafael Mafort Coimbra
                         </h1>
                         <h2 className="text-lg text-muted-foreground font-semibold">
-                            Fullstack Developer
+                            Software Engineer
                         </h2>
                     </div>
                 </section>

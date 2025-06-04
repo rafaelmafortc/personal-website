@@ -19,7 +19,7 @@ export default async function RootLayout({
     const lang = cookieStore.get('language')?.value || 'pt-BR';
 
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang={lang} suppressHydrationWarning>
             <head>
                 <link
                     rel="icon"

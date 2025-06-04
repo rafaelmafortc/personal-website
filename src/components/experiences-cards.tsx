@@ -40,7 +40,7 @@ export function ExperiencesCards() {
                             </p>
                         </div>
                     </div>
-                    <p className="font-medium text-muted-foreground">
+                    <p className="text-muted-foreground">
                         {t(`${key}_description`)}
                     </p>
                     <div className="flex gap-2">

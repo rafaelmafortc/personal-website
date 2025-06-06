@@ -22,7 +22,7 @@ const projects = {
 
 export function ProjectsCards() {
     return (
-        <div className="flex flex-col sm:flex-row gap-2">
+        <div className="flex flex-col sm:flex-row gap-2 w-full">
             {Object.entries(projects).map(([key, value]) => (
                 <div key={key} className="p-1">
                     <a

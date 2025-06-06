@@ -13,5 +13,8 @@
         "btgpactual_description": "Currently, I work as a software engineer on the Family Office technology team at BTG Pactual, the largest investment bank in Latin America. I contribute to the development of scalable and efficient solutions that automate and optimize key processes such as asset and account consolidation, investment performance calculations, and customized client reporting.",
         "vlepo_date": "Jan/2022 - Nov/2022",
         "vlepo_description": "I worked as a front-end developer at Vlepo, a web-based product pricing platform designed for industries and retail companies. The platform aimed to simplify and automate the pricing process, helping businesses make data-driven decisions and improve profitability."
+    },
+    "contact": {
+        "phone": "Phone"
     }
 }

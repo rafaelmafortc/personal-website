@@ -3,9 +3,11 @@ import { useTranslations } from 'next-intl';
 
 import { ThemeToggle } from '@/components/theme-toggle';
 import { LanguageSwitcher } from '@/components/language-switcher';
+
 import { SkillsCarousel } from '@/components/skills-carousel';
 import { ExperiencesCards } from '@/components/experiences-cards';
 import { ProjectsCards } from '@/components/projects-cards';
+import { ContactSection } from '@/components/contact-section';
 
 export default function Home() {
     const t = useTranslations('home');
@@ -18,7 +20,7 @@ export default function Home() {
         children: React.ReactNode;
     }) {
         return (
-            <section className="flex flex-col gap-1">
+            <section className="flex flex-col gap-4">
                 <h3 className="text-2xl font-semibold">{t(title)}</h3>
                 <div className="w-full flex justify-center">{children}</div>
             </section>
@@ -65,7 +67,7 @@ export default function Home() {
                     <ProjectsCards />
                 </Section>
                 <Section title={'contact'}>
-                    <div></div>
+                    <ContactSection />
                 </Section>
             </div>
         </main>

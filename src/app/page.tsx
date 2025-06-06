@@ -10,6 +10,21 @@ import { ProjectsCards } from '@/components/projects-cards';
 export default function Home() {
     const t = useTranslations('home');
 
+    function Section({
+        title,
+        children,
+    }: {
+        title: string;
+        children: React.ReactNode;
+    }) {
+        return (
+            <section className="flex flex-col gap-1">
+                <h3 className="text-2xl font-semibold">{t(title)}</h3>
+                <div className="w-full flex justify-center">{children}</div>
+            </section>
+        );
+    }
+
     return (
         <main className="min-h-full p-6 max-w-2xl mx-auto mt-4 mb-8">
             <div className="fixed flex gap-2 bottom-4 right-4">
@@ -35,32 +50,23 @@ export default function Home() {
                         </h2>
                     </div>
                 </section>
-                <section className="flex flex-col gap-1">
-                    <h3 className="text-2xl font-semibold">{t('about')}</h3>
+                <Section title={'about'}>
                     <p className="text-base text-muted-foreground">
                         {t('about_text')}
                     </p>
-                </section>
-                <section className="flex flex-col gap-1">
-                    <h3 className="text-2xl font-semibold">{t('skills')}</h3>
-                    <div className="w-full flex justify-center">
-                        <SkillsCarousel />
-                    </div>
-                </section>
-                <section className="flex flex-col gap-4">
-                    <h3 className="text-2xl font-semibold">
-                        {t('experience')}
-                    </h3>
-                    <div>
-                        <ExperiencesCards />
-                    </div>
-                </section>
-                <section className="flex flex-col gap-4">
-                    <h3 className="text-2xl font-semibold">{t('projects')}</h3>
-                    <div>
-                        <ProjectsCards />
-                    </div>
-                </section>
+                </Section>
+                <Section title={'skills'}>
+                    <SkillsCarousel />
+                </Section>
+                <Section title={'experience'}>
+                    <ExperiencesCards />
+                </Section>
+                <Section title={'projects'}>
+                    <ProjectsCards />
+                </Section>
+                <Section title={'contact'}>
+                    <div></div>
+                </Section>
             </div>
         </main>
     );

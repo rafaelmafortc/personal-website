@@ -22,7 +22,7 @@ const projects = {
 
 export function ProjectsCards() {
     return (
-        <div className="flex flex-col sm:flex-row gap-2 w-full">
+        <div className="flex flex-col gap-4 w-full">
             {Object.entries(projects).map(([key, value]) => (
                 <div key={key} className="p-1">
                     <a
@@ -33,7 +33,7 @@ export function ProjectsCards() {
                         className="block"
                     >
                         <Card
-                            className="h-[80px] cursor-pointer transition-all duration-200 ease-in-out hover:scale-[1.01] hover:shadow-lg rounded-lg"
+                            className="h-[100px] dark:shadow-secondary cursor-pointer transition-all duration-300 hover:scale-[1.01] hover:shadow-md rounded-lg"
                             style={{ backgroundColor: value.bgcolor }}
                         >
                             <CardContent className="flex items-center justify-center h-full">

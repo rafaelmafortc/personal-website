@@ -15,6 +15,8 @@
         "vlepo_description": "I worked as a front-end developer at Vlepo, a web-based product pricing platform designed for industries and retail companies. The platform aimed to simplify and automate the pricing process, helping businesses make data-driven decisions and improve profitability."
     },
     "contact": {
-        "phone": "Phone"
+        "phone": "Phone",
+        "email": "Email",
+        "linkedin": "LinkedIn"
     }
 }

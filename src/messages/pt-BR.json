@@ -15,6 +15,8 @@
         "vlepo_description": "Trabalhei como desenvolvedor front-end na Vlepo, uma plataforma web de precificação de produtos voltada para indústrias e empresas do varejo. A plataforma tinha como objetivo simplificar e automatizar o processo de precificação, ajudando as empresas a tomar decisões baseadas em dados e a melhorar a lucratividade."
     },
     "contact": {
-        "phone": "Telefone"
+        "phone": "Telefone",
+        "email": "Email",
+        "linkedin": "LinkedIn"
     }
 }

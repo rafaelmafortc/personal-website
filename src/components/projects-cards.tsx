@@ -13,11 +13,11 @@ const projects = {
         bgcolor: '#FFFFFF',
         href: 'https://www.linkedin.com/feed/update/urn:li:activity:6990068980187074561/',
     },
-    myfinances: {
-        title: 'MyFinances',
-        bgcolor: '#09090b',
-        href: 'https://my-finances-pro.vercel.app/',
-    },
+    // myfinances: {
+    //     title: 'MyFinances',
+    //     bgcolor: '#09090b',
+    //     href: 'https://my-finances-pro.vercel.app/',
+    // },
 };
 
 export function ProjectsCards() {

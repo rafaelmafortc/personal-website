@@ -20,7 +20,8 @@ export function EducationCards() {
                     key={key}
                     icon={`/education/${key}.svg`}
                     iconAlt={t(`${key}_institution`)}
-                    title={`${t(`${key}_degree`)} @ ${t(`${key}_institution`)}`}
+                    title={t(`${key}_institution`)}
+                    subtitle={t(`${key}_degree`)}
                     date={t(`${key}_date`)}
                     link={value.link}
                 />

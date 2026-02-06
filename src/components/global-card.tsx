@@ -5,7 +5,8 @@ interface GlobalCardProps {
     icon: string;
     iconAlt: string;
     title: string;
-    date: string;
+    subtitle?: string;
+    date?: string;
     link?: string;
     bgcolor?: string;
 }
@@ -14,6 +15,7 @@ export function GlobalCard({
     icon,
     iconAlt,
     title,
+    subtitle,
     date,
     link,
     bgcolor,
@@ -45,7 +47,12 @@ export function GlobalCard({
             )}
             <div className="space-y-1">
                 <p className="font-medium leading-none">{title}</p>
-                <p className="text-sm text-sidebar-ring">{date}</p>
+                {subtitle && (
+                    <p className="text-sm text-muted-foreground">{subtitle}</p>
+                )}
+                {date && (
+                    <p className="text-sm text-sidebar-ring">{date}</p>
+                )}
             </div>
         </div>
     );

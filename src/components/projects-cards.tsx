@@ -23,7 +23,7 @@ export function ProjectsCards() {
                     icon={`/projects/${key}.svg`}
                     iconAlt={t(`${key}_title`)}
                     title={t(`${key}_title`)}
-                    date={t(`${key}_date`)}
+                    subtitle={t(`${key}_description`)}
                     link={value.link}
                     bgcolor={value.bgcolor}
                 />

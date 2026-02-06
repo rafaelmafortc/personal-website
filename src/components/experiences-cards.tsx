@@ -20,7 +20,8 @@ export function ExperiencesCards() {
                     key={key}
                     icon={`/experiences/${key}.svg`}
                     iconAlt={t(`${key}_company`)}
-                    title={`${t(`${key}_cargo`)} @ ${t(`${key}_company`)}`}
+                    title={t(`${key}_company`)}
+                    subtitle={t(`${key}_cargo`)}
                     date={t(`${key}_date`)}
                     link={value.link}
                 />

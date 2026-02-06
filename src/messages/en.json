@@ -18,6 +18,12 @@
         "vlepo_date": "Jan/2022 - Nov/2022",
         "vlepo_description": "I worked as a front-end developer at Vlepo, a web-based product pricing platform designed for industries and retail companies. The platform aimed to simplify and automate the pricing process, helping businesses make data-driven decisions and improve profitability."
     },
+    "projects": {
+        "bevoltz_title": "beVoltz",
+        "bevoltz_date": "2024",
+        "codify_title": "Codify",
+        "codify_date": "2023"
+    },
     "contact": {
         "phone": "Phone",
         "email": "Email",

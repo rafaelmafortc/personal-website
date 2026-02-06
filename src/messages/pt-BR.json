@@ -18,6 +18,12 @@
         "vlepo_date": "Jan/2022 - Nov/2022",
         "vlepo_description": "Trabalhei como desenvolvedor front-end na Vlepo, uma plataforma web de precificação de produtos voltada para indústrias e empresas do varejo. A plataforma tinha como objetivo simplificar e automatizar o processo de precificação, ajudando as empresas a tomar decisões baseadas em dados e a melhorar a lucratividade."
     },
+    "projects": {
+        "bevoltz_title": "beVoltz",
+        "bevoltz_date": "2024",
+        "codify_title": "Codify",
+        "codify_date": "2023"
+    },
     "contact": {
         "phone": "Telefone",
         "email": "Email",

@@ -1,55 +1,55 @@
-import Image from 'next/image';
-
-import { Card, CardContent } from '@/components/ui/card';
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const projects = {
     bevoltz: {
-        title: 'beVoltz',
+        link: 'https://www.linkedin.com/feed/update/urn:li:activity:7125182003720667137/',
         bgcolor: '#223739',
-        href: 'https://www.linkedin.com/feed/update/urn:li:activity:7125182003720667137/',
     },
     codify: {
-        title: 'Codify',
-        bgcolor: '#FFFFFF',
-        href: 'https://www.linkedin.com/feed/update/urn:li:activity:6990068980187074561/',
+        link: 'https://www.linkedin.com/feed/update/urn:li:activity:6990068980187074561/',
+        bgcolor: '#ffffff',
     },
-    // myfinances: {
-    //     title: 'MyFinances',
-    //     bgcolor: '#09090b',
-    //     href: 'https://my-finances-pro.vercel.app/',
-    // },
 };
 
 export function ProjectsCards() {
+    const t = useTranslations('projects');
+
     return (
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col gap-8 w-full">
             {Object.entries(projects).map(([key, value]) => (
-                <div key={key} className="p-1">
-                    <a
-                        key={key}
-                        href={value.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block"
-                    >
-                        <Card
-                            className="h-[100px] dark:shadow-secondary cursor-pointer transition-all duration-300 hover:scale-[1.01] hover:shadow-md rounded-lg"
-                            style={{ backgroundColor: value.bgcolor }}
+                <div key={key} className="flex flex-col gap-2 justify-start">
+                    <div className="flex items-center gap-4">
+                        <Link
+                            href={value.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="transition-transform duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
                         >
-                            <CardContent className="flex items-center justify-center h-full">
-                                <Image
+                            <Avatar
+                                size="lg"
+                                className="p-1"
+                                style={{ backgroundColor: value.bgcolor }}
+                            >
+                                <AvatarImage
                                     src={`/projects/${key}.svg`}
-                                    alt={value.title}
-                                    width={160}
-                                    height={60}
-                                    style={{
-                                        height: 'auto',
-                                        userSelect: 'none',
-                                    }}
+                                    alt={t(`${key}_title`)}
                                 />
-                            </CardContent>
-                        </Card>
-                    </a>
+                                <AvatarFallback>
+                                    {t(`${key}_title`).charAt(0)}
+                                </AvatarFallback>
+                            </Avatar>
+                        </Link>
+                        <div className="space-y-1">
+                            <p className="font-medium leading-none">
+                                {t(`${key}_title`)}
+                            </p>
+                            <p className="text-sm text-sidebar-ring">
+                                {t(`${key}_date`)}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>

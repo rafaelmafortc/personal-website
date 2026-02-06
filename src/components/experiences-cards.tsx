@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
@@ -21,7 +22,7 @@ export function ExperiencesCards() {
             {Object.entries(experiences).map(([key, value]) => (
                 <div key={key} className="flex flex-col gap-2 justify-start">
                     <div className="flex items-center gap-4">
-                        <a
+                        <Link
                             href={value.link}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -36,7 +37,7 @@ export function ExperiencesCards() {
                                     {t(`${key}_company`).charAt(0)}
                                 </AvatarFallback>
                             </Avatar>
-                        </a>
+                        </Link>
                         <div className="space-y-1">
                             <p className="font-medium leading-none">
                                 {t(`${key}_cargo`)} @ {t(`${key}_company`)}

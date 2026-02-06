@@ -46,7 +46,7 @@ export function SkillsCarousel() {
                                                 userSelect: 'none',
                                             }}
                                         />
-                                        <p className="text-xl text-muted-foreground">
+                                        <p className="text-medium text-muted-foreground">
                                             {name}
                                         </p>
                                     </div>

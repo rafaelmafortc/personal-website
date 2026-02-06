@@ -34,7 +34,7 @@ export default function Home() {
                 <LanguageSwitcher />
                 <ThemeToggle />
             </div>
-            <div className="flex flex-col gap-8">
+            <div className="space-y-12">
                 <section className="flex gap-4 items-center">
                     <Image
                         className="rounded-full"

@@ -6,6 +6,7 @@
         "skills": "Skills",
         "experience": "Experiences",
         "projects": "Projects",
+        "education": "Education",
         "contact": "Contact"
     },
     "experiences": {
@@ -23,6 +24,14 @@
         "bevoltz_date": "2024",
         "codify_title": "Codify",
         "codify_date": "2023"
+    },
+    "education": {
+        "fiap_institution": "FIAP",
+        "fiap_degree": "Associate Degree, Computer Systems Analysis",
+        "fiap_date": "Jan/2022 - Dec/2023",
+        "babson_institution": "Babson College",
+        "babson_degree": "Certificate of Participation, Entrepreneurship/Entrepreneurial Studies",
+        "babson_date": "Jul/2024 - Jul/2024"
     },
     "contact": {
         "phone": "Phone",

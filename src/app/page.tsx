@@ -8,6 +8,7 @@ import { ContactHeader } from '@/components/contact-header';
 import { SkillsCarousel } from '@/components/skills-carousel';
 import { ExperiencesCards } from '@/components/experiences-cards';
 import { ProjectsCards } from '@/components/projects-cards';
+import { EducationCards } from '@/components/education-cards';
 
 export default function Home() {
     const t = useTranslations('home');
@@ -58,6 +59,9 @@ export default function Home() {
                 </Section>
                 <Section title={'projects'}>
                     <ProjectsCards />
+                </Section>
+                <Section title={'education'}>
+                    <EducationCards />
                 </Section>
             </div>
         </main>

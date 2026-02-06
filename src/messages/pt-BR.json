@@ -6,6 +6,7 @@
         "skills": "Competências",
         "experience": "Experiências",
         "projects": "Projetos",
+        "education": "Educação",
         "contact": "Contato"
     },
     "experiences": {
@@ -23,6 +24,14 @@
         "bevoltz_date": "2024",
         "codify_title": "Codify",
         "codify_date": "2023"
+    },
+    "education": {
+        "fiap_institution": "FIAP",
+        "fiap_degree": "Curso Superior de Tecnologia (CST), Análise e Desenvolvimento de Sistemas",
+        "fiap_date": "Jan/2022 - Dez/2023",
+        "babson_institution": "Babson College",
+        "babson_degree": "Certificado de Participação, Empreendedorismo",
+        "babson_date": "Jul/2024 - Jul/2024"
     },
     "contact": {
         "phone": "Telefone",

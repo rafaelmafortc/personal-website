@@ -6,8 +6,8 @@ import { ThemeProvider } from '@/provider/theme-provider';
 import './globals.css';
 
 export const metadata: Metadata = {
-    title: 'Rafael Mafort Coimbra',
-    description: 'powered by Rafael Mafort Coimbra',
+    title: 'Rafael Mafort',
+    description: 'powered by Rafael Mafort',
 };
 
 export default async function RootLayout({
@@ -27,7 +27,7 @@ export default async function RootLayout({
                     type="image/x-icon"
                 />
             </head>
-            <body>
+            <body suppressHydrationWarning>
                 <NextIntlClientProvider locale={lang}>
                     <ThemeProvider
                         attribute="class"

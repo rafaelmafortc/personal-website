@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const experiences = {
     btgpactual: {
@@ -17,20 +17,19 @@ export function ExperiencesCards() {
     const t = useTranslations('experiences');
 
     return (
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 w-full">
             {Object.entries(experiences).map(([key, value]) => (
-                <div key={key} className="flex flex-col gap-2">
+                <div key={key} className="flex flex-col gap-2 justify-start">
                     <div className="flex items-center gap-4">
-                        <Image
-                            src={`/experiences/${key}.svg`}
-                            alt={value.title}
-                            width={48}
-                            height={48}
-                            style={{
-                                height: 'auto',
-                                userSelect: 'none',
-                            }}
-                        />
+                        <Avatar size="lg">
+                            <AvatarImage
+                                src={`/experiences/${key}.svg`}
+                                alt={value.title}
+                            />
+                            <AvatarFallback>
+                                {value.title.charAt(0)}
+                            </AvatarFallback>
+                        </Avatar>
                         <div className="space-y-1">
                             <p className="font-medium leading-none">
                                 {value.title}
@@ -40,9 +39,6 @@ export function ExperiencesCards() {
                             </p>
                         </div>
                     </div>
-                    <p className="text-muted-foreground">
-                        {t(`${key}_description`)}
-                    </p>
                     <div className="flex gap-2">
                         {value.technologies.map((tech) => (
                             <Badge key={tech} variant="secondary">

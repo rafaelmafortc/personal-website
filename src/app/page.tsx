@@ -3,11 +3,11 @@ import { useTranslations } from 'next-intl';
 
 import { ThemeToggle } from '@/components/theme-toggle';
 import { LanguageSwitcher } from '@/components/language-switcher';
+import { ContactHeader } from '@/components/contact-header';
 
 import { SkillsCarousel } from '@/components/skills-carousel';
 import { ExperiencesCards } from '@/components/experiences-cards';
 import { ProjectsCards } from '@/components/projects-cards';
-import { ContactSection } from '@/components/contact-section';
 
 export default function Home() {
     const t = useTranslations('home');
@@ -47,16 +47,12 @@ export default function Home() {
                         <h1 className="text-3xl font-bold">
                             Rafael Mafort Coimbra
                         </h1>
-                        <h2 className="text-lg text-muted-foreground font-semibold">
+                        <h2 className="text-lg text-muted-foreground font-base">
                             {t('subtitle')}
                         </h2>
+                        <ContactHeader />
                     </div>
                 </section>
-                <Section title={'about'}>
-                    <p className="text-base text-muted-foreground">
-                        {t('about_text')}
-                    </p>
-                </Section>
                 <Section title={'skills'}>
                     <SkillsCarousel />
                 </Section>
@@ -65,9 +61,6 @@ export default function Home() {
                 </Section>
                 <Section title={'projects'}>
                     <ProjectsCards />
-                </Section>
-                <Section title={'contact'}>
-                    <ContactSection />
                 </Section>
             </div>
         </main>

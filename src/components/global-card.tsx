@@ -22,8 +22,7 @@ export function GlobalCard({
 }: GlobalCardProps) {
     const avatarContent = (
         <Avatar
-            size="lg"
-            className={bgcolor ? 'rounded-lg p-1' : ''}
+            className={bgcolor ? 'rounded-lg p-1 size-12!' : 'size-12!'}
             style={bgcolor ? { backgroundColor: bgcolor } : undefined}
         >
             <AvatarImage src={icon} alt={iconAlt} />
@@ -50,12 +49,12 @@ export function GlobalCard({
                 {subtitle && (
                     <p className="text-sm text-muted-foreground">{subtitle}</p>
                 )}
-                {date && (
-                    <p className="text-sm text-sidebar-ring">{date}</p>
-                )}
+                {date && <p className="text-sm text-sidebar-ring">{date}</p>}
             </div>
         </div>
     );
 
-    return <div className="flex flex-col gap-2 justify-start">{cardContent}</div>;
+    return (
+        <div className="flex flex-col gap-2 justify-start">{cardContent}</div>
+    );
 }

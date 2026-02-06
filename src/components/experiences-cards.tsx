@@ -4,11 +4,11 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const experiences = {
     btgpactual: {
-        title: 'BTG Pactual',
+        link: 'https://www.btgpactual.com',
         technologies: ['Django', 'React', 'AWS Services', 'PostgreSQL'],
     },
     vlepo: {
-        title: 'Vlepo',
+        link: 'https://www.linkedin.com/company/vlepo-tech/',
         technologies: ['NextJS', 'TypeScript'],
     },
 };
@@ -21,31 +21,38 @@ export function ExperiencesCards() {
             {Object.entries(experiences).map(([key, value]) => (
                 <div key={key} className="flex flex-col gap-2 justify-start">
                     <div className="flex items-center gap-4">
-                        <Avatar size="lg">
-                            <AvatarImage
-                                src={`/experiences/${key}.svg`}
-                                alt={value.title}
-                            />
-                            <AvatarFallback>
-                                {value.title.charAt(0)}
-                            </AvatarFallback>
-                        </Avatar>
+                        <a
+                            href={value.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="transition-transform duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
+                        >
+                            <Avatar size="lg">
+                                <AvatarImage
+                                    src={`/experiences/${key}.svg`}
+                                    alt={t(`${key}_company`)}
+                                />
+                                <AvatarFallback>
+                                    {t(`${key}_company`).charAt(0)}
+                                </AvatarFallback>
+                            </Avatar>
+                        </a>
                         <div className="space-y-1">
                             <p className="font-medium leading-none">
-                                {value.title}
+                                {t(`${key}_cargo`)} @ {t(`${key}_company`)}
                             </p>
                             <p className="text-sm text-sidebar-ring">
                                 {t(`${key}_date`)}
                             </p>
                         </div>
                     </div>
-                    <div className="flex gap-2">
+                    {/* <div className="flex gap-2">
                         {value.technologies.map((tech) => (
                             <Badge key={tech} variant="secondary">
                                 {tech}
                             </Badge>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
             ))}
         </div>

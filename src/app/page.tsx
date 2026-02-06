@@ -47,9 +47,6 @@ export default function Home() {
                         <h1 className="text-3xl font-bold">
                             Rafael Mafort Coimbra
                         </h1>
-                        <h2 className="text-lg text-muted-foreground font-base">
-                            {t('subtitle')}
-                        </h2>
                         <ContactHeader />
                     </div>
                 </section>
